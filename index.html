@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOMA FASHION AND ACCESSORIES ONLINE STORE</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #e11d48;
+            --accent-hover: #be123c;
+            --bg-light: #f8fafc;
+            --text-dark: #334155;
+            --white: #ffffff;
+            --gray-border: #e2e8f0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header & Nav */
+        header {
+            position: sticky;
+            top: 0;
+            background: var(--white);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.75rem 2rem;
+        }
+
+        .logo-img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 1.5rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        nav a:hover {
+            color: var(--accent);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 0.75)), url('https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: var(--white);
+            text-align: center;
+            padding: 6rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 2rem auto;
+            opacity: 0.9;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--accent);
+            color: var(--white);
+            padding: 0.75rem 1.75rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.2s;
+        }
+
+        .btn:hover {
+            background: var(--accent-hover);
+        }
+
+        /* Container Sections */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2.5rem;
+            color: var(--primary);
+        }
+
+        /* Categories / Products Grid */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+            border: 1px solid var(--gray-border);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card-content h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            color: #64748b;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 1.1rem;
+        }
+
+        /* Contact / Order Section */
+        .contact-section {
+            background: var(--white);
+            border-top: 1px solid var(--gray-border);
+        }
+
+        .contact-box {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .contact-box p {
+            margin-bottom: 1.5rem;
+            color: #64748b;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: var(--white);
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <a href="#home">
+                <img src="noma-logo.png" alt="NOMA Fashion and Accessories Logo" class="logo-img">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#apparel">Apparel & Shoes</a></li>
+                    <li><a href="#home-essentials">Home Essentials</a></li>
+                    <li><a href="#tech">Tech Gadgets</a></li>
+                    <li><a href="#contact">Order Now</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>Welcome to NOMA Fashion & Accessories</h1>
+        <p>Your premier online destination for quality clothing, footwear for the whole family, cozy home essentials, and top-tier phone accessories.</p>
+        <a href="https://wa.me/27847744338?text=Hi%20Noma%20Store,%20I%20would%20like%20to%20place%20an%20order." class="btn" target="_blank">Order via WhatsApp</a>
+    </section>
+
+    <!-- Apparel & Shoes Section -->
+    <div id="apparel" class="container">
+        <h2 class="section-title">Clothing & Footwear (Men, Women & Kids)</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=600&q=80" alt="Clothing">
+                <div class="card-content">
+                    <h3>Apparel & Jackets</h3>
+                    <p>Trendy jackets, clothes, belts, socks, hats, and caps for men, women, and children.</p>
+                    <div class="price">From R150</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" alt="Sneakers and Shoes">
+                <div class="card-content">
+                    <h3>Sneakers & Formal Shoes</h3>
+                    <p>Durable everyday sneakers and sharp formal shoes tailored for style and comfort.</p>
+                    <div class="price">From R350</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home Essentials Section -->
+    <div class="container" style="background-color: #f1f5f9;">
+        <h2 id="home-essentials" class="section-title">Home & Comfort Essentials</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=600&q=80" alt="Blankets and Bedsheets">
+                <div class="card-content">
+                    <h3>Blankets & Bedsheets</h3>
+                    <p>Warm winter blankets and soft, high-quality bedsheets for a restful sleep.</p>
+                    <div class="price">From R200</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=600&q=80" alt="Mosquito Nets">
+                <div class="card-content">
+                    <h3>Mosquito Nets</h3>
+                    <p>Protect your family from pests and ensure peaceful, bite-free nights.</p>
+                    <div class="price">From R120</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tech & Accessories Section -->
+    <div id="tech" class="container">
+        <h2 class="section-title">Phone Accessories & Gadgets</h2>
+        <div class="grid">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80" alt="Earphones and Power Banks">
+                <div class="card-content">
+                    <h3>Chargers, Power Banks & Earphones</h3>
+                    <p>Fast wall chargers, high-capacity power banks, cables, and crisp earphones.</p>
+                    <div class="price">From R80</div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?auto=format&fit=crop&w=600&q=80" alt="Smart Watches">
+                <div class="card-content">
+                    <h3>Smart Phone Watches</h3>
+                    <p>Modern smartwatches with Bluetooth calling, fitness tracking, and notifications.</p>
+                    <div class="price">From R450</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact & Order Section -->
+    <section id="contact" class="container contact-section">
+        <div class="contact-box">
+            <h2 class="section-title">Place Your Order</h2>
+            <p>Ready to purchase? Click below to chat with us directly via WhatsApp to confirm sizing, product availability, and delivery options.</p>
+            <a href="https://wa.me/27847744338?text=Hi%20Noma%20Store,%20I%20would%20like%20to%20place%20an%20order." class="btn" target="_blank">Chat on WhatsApp to Order</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 NOMA FASHION AND ACCESSORIES ONLINE STORE. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
